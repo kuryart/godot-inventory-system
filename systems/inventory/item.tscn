@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbqe7o5uwexwt"]
+
+[ext_resource type="Texture2D" uid="uid://cer18ieilxqw7" path="res://assets/sprites/items/hermes_helmet.png" id="1_apbsn"]
+[ext_resource type="Script" path="res://systems/inventory/Item.gd" id="2_d2dso"]
+[ext_resource type="Resource" uid="uid://c6ej8v04bkjvt" path="res://database/itens/helmet.tres" id="2_fwhth"]
+[ext_resource type="Texture2D" uid="uid://wwwf7wlnt0fk" path="res://assets/sprites/ui/slot.png" id="4_bcqns"]
+[ext_resource type="Script" path="res://systems/inventory/Background.gd" id="5_c0d28"]
+[ext_resource type="Script" path="res://systems/inventory/Foreground.gd" id="6_42kum"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_k8ysg"]
+blend_mode = 1
+
+[node name="Item" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 237.0
+offset_bottom = 237.0
+script = ExtResource("2_d2dso")
+item_data = ExtResource("2_fwhth")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0, 1, 0.366667, 1)
+material = SubResource("CanvasItemMaterial_k8ysg")
+layout_mode = 0
+offset_right = 237.0
+offset_bottom = 237.0
+texture = ExtResource("4_bcqns")
+expand_mode = 1
+stretch_mode = 1
+script = ExtResource("5_c0d28")
+
+[node name="Foreground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 237.0
+offset_bottom = 237.0
+texture = ExtResource("1_apbsn")
+expand_mode = 1
+script = ExtResource("6_42kum")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="item_changed" from="." to="Background" method="_on_item_changed"]
+[connection signal="item_changed" from="." to="Foreground" method="_on_item_changed"]

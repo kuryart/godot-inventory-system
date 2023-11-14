@@ -1,0 +1,430 @@
+[gd_scene load_steps=70 format=3 uid="uid://bfsta323tg4vx"]
+
+[ext_resource type="Script" path="res://systems/GameController.gd" id="1_e06bq"]
+[ext_resource type="PackedScene" uid="uid://bmjayor586etb" path="res://systems/inventory/Inventory.tscn" id="2_sr7o1"]
+[ext_resource type="Script" path="res://systems/GUIController.gd" id="2_xcn44"]
+[ext_resource type="Script" path="res://systems/inventory/Slot.gd" id="3_wh4jm"]
+[ext_resource type="Script" path="res://systems/input/InputController.gd" id="4_8pxyu"]
+
+[sub_resource type="Resource" id="Resource_fwvkh"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_pmc06"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ieo6v"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_hj1gc"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_7h0cn"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_cpqb3"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_141sq"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_gvt6k"]
+script = ExtResource("3_wh4jm")
+points = Vector2(0, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_wtkvj"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_cajbq"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ogu2j"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_apyhx"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_l2dvq"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_iuvkm"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_wxob5"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_t3qxo"]
+script = ExtResource("3_wh4jm")
+points = Vector2(1, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ts1ex"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_n6ns0"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_q3bhw"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_65c05"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_w373d"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ey1wl"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_deidx"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_4yprm"]
+script = ExtResource("3_wh4jm")
+points = Vector2(2, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_5v0a8"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_rrpxg"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_2rnvl"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_iuaba"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_dh3qi"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_kxr1g"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_vfhlq"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_da4ra"]
+script = ExtResource("3_wh4jm")
+points = Vector2(3, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_2siw2"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_5341b"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_r1mt8"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ok6fl"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_w82h6"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_jlxvf"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_qbuge"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_daxxe"]
+script = ExtResource("3_wh4jm")
+points = Vector2(4, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_0s7af"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_jt2xc"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_x72b4"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_bngxu"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_t4kvf"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_vg4lq"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_0eo4f"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_jve6w"]
+script = ExtResource("3_wh4jm")
+points = Vector2(5, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_pp0xt"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_oavo3"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_8hs4p"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_acjbh"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_6khwj"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_kj66a"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_rdxk6"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_2aa0b"]
+script = ExtResource("3_wh4jm")
+points = Vector2(6, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_y1rae"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_s128u"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_3vrqw"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_iibw0"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_5utv0"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_rakje"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_vybww"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_btyec"]
+script = ExtResource("3_wh4jm")
+points = Vector2(7, 7)
+occupied = false
+item_id = -1
+
+[node name="GameController" type="Node"]
+script = ExtResource("1_e06bq")
+
+[node name="GUIController" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_xcn44")
+
+[node name="Inventory" parent="GUIController" instance=ExtResource("2_sr7o1")]
+layout_mode = 1
+slots = [[SubResource("Resource_fwvkh"), SubResource("Resource_pmc06"), SubResource("Resource_ieo6v"), SubResource("Resource_hj1gc"), SubResource("Resource_7h0cn"), SubResource("Resource_cpqb3"), SubResource("Resource_141sq"), SubResource("Resource_gvt6k")], [SubResource("Resource_wtkvj"), SubResource("Resource_cajbq"), SubResource("Resource_ogu2j"), SubResource("Resource_apyhx"), SubResource("Resource_l2dvq"), SubResource("Resource_iuvkm"), SubResource("Resource_wxob5"), SubResource("Resource_t3qxo")], [SubResource("Resource_ts1ex"), SubResource("Resource_n6ns0"), SubResource("Resource_q3bhw"), SubResource("Resource_65c05"), SubResource("Resource_w373d"), SubResource("Resource_ey1wl"), SubResource("Resource_deidx"), SubResource("Resource_4yprm")], [SubResource("Resource_5v0a8"), SubResource("Resource_rrpxg"), SubResource("Resource_2rnvl"), SubResource("Resource_iuaba"), SubResource("Resource_dh3qi"), SubResource("Resource_kxr1g"), SubResource("Resource_vfhlq"), SubResource("Resource_da4ra")], [SubResource("Resource_2siw2"), SubResource("Resource_5341b"), SubResource("Resource_r1mt8"), SubResource("Resource_ok6fl"), SubResource("Resource_w82h6"), SubResource("Resource_jlxvf"), SubResource("Resource_qbuge"), SubResource("Resource_daxxe")], [SubResource("Resource_0s7af"), SubResource("Resource_jt2xc"), SubResource("Resource_x72b4"), SubResource("Resource_bngxu"), SubResource("Resource_t4kvf"), SubResource("Resource_vg4lq"), SubResource("Resource_0eo4f"), SubResource("Resource_jve6w")], [SubResource("Resource_pp0xt"), SubResource("Resource_oavo3"), SubResource("Resource_8hs4p"), SubResource("Resource_acjbh"), SubResource("Resource_6khwj"), SubResource("Resource_kj66a"), SubResource("Resource_rdxk6"), SubResource("Resource_2aa0b")], [SubResource("Resource_y1rae"), SubResource("Resource_s128u"), SubResource("Resource_3vrqw"), SubResource("Resource_iibw0"), SubResource("Resource_5utv0"), SubResource("Resource_rakje"), SubResource("Resource_vybww"), SubResource("Resource_btyec")]]
+
+[node name="Menu" type="Control" parent="GUIController"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InputController" type="Node" parent="."]
+script = ExtResource("4_8pxyu")
+
+[node name="AudioController" type="Node" parent="."]
+
+[node name="SceneController" type="Node" parent="."]
+
+[node name="Scenario" type="Node" parent="SceneController"]
+
+[node name="Actors" type="Node" parent="SceneController"]
+
+[node name="Director" type="Node" parent="SceneController"]
+
+[connection signal="inventory_closed" from="InputController" to="GUIController/Inventory" method="_on_inventory_closed"]
+[connection signal="inventory_opened" from="InputController" to="GUIController/Inventory" method="_on_inventory_opened"]
+[connection signal="mouse_left_click" from="InputController" to="GUIController/Inventory" method="_on_mouse_left_click"]
+[connection signal="mouse_move" from="InputController" to="GUIController/Inventory" method="_on_mouse_move"]

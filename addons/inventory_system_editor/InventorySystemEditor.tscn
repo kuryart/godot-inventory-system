@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0dry4p7ytal8"]
+
+[ext_resource type="Script" path="res://addons/inventory_system_editor/EditorWindow.gd" id="1_w205f"]
+
+[node name="GameEditor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Window" type="Window" parent="."]
+mode = 2
+title = "GameEditor"
+size = Vector2i(1152, 648)
+content_scale_mode = 1
+script = ExtResource("1_w205f")
+
+[node name="Base" type="Control" parent="Window"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Window/Base"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="Window/Base/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.01
+anchor_right = 0.99
+anchor_bottom = 0.99
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Items" type="Label" parent="Window/Base/Panel/TabContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Window/Base/Panel/TabContainer"]
+visible = false
+layout_mode = 2
+
+[connection signal="close_requested" from="Window" to="Window" method="_on_close_requested"]

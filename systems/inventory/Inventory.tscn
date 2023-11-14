@@ -1,0 +1,434 @@
+[gd_scene load_steps=73 format=3 uid="uid://bmjayor586etb"]
+
+[ext_resource type="Texture2D" uid="uid://wwwf7wlnt0fk" path="res://assets/sprites/ui/slot.png" id="1_ntjc1"]
+[ext_resource type="Script" path="res://systems/inventory/Slot.gd" id="2_4p4es"]
+[ext_resource type="Resource" uid="uid://btjvtne3cfi0m" path="res://stored/InventoryItens.tres" id="2_gyfd7"]
+[ext_resource type="Script" path="res://systems/inventory/Inventory.gd" id="2_npcku"]
+[ext_resource type="Resource" uid="uid://c6ej8v04bkjvt" path="res://database/itens/helmet.tres" id="2_r24ri"]
+[ext_resource type="PackedScene" uid="uid://bbqe7o5uwexwt" path="res://systems/inventory/item.tscn" id="4_xcgwa"]
+[ext_resource type="Resource" uid="uid://d05s88vebk1e8" path="res://database/itens/sword.tres" id="6_qg060"]
+
+[sub_resource type="Resource" id="Resource_yxlv1"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_162er"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_xidgv"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_iv5kw"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_fp7ah"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_xinxs"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_oxkel"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_0own3"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 0)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_apmcc"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_da6eh"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_iiabi"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_l0thf"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_omcw7"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_u5cme"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_8m5a7"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_78qr8"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 1)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_6fqvp"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_42wod"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_vw3px"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_hdaa3"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_68mtb"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_vfrd6"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_732br"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_bv83s"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 2)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_2b2on"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ai3wk"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_l6pm0"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_mbo6j"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_wsura"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_6fo6g"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_34nfm"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_d7p68"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 3)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_bespv"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_7ge4h"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_7i8dr"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_tkusd"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_7gvlm"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_kpt1f"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_o5ui6"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_tol4j"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 4)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_es1jg"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_4ts58"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ies6u"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_pqhkm"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_4qalb"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_a4dww"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_7p3oe"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_i4xpu"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 5)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_ui4hv"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_u6bkm"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_4voaw"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_c1js6"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_x8nik"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_lkapj"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_jaxtv"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_u1ot6"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 6)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_jh0ll"]
+script = ExtResource("2_4p4es")
+points = Vector2(0, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_uaq5b"]
+script = ExtResource("2_4p4es")
+points = Vector2(1, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_c5370"]
+script = ExtResource("2_4p4es")
+points = Vector2(2, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_3pp58"]
+script = ExtResource("2_4p4es")
+points = Vector2(3, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_x8s5h"]
+script = ExtResource("2_4p4es")
+points = Vector2(4, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_cdnrh"]
+script = ExtResource("2_4p4es")
+points = Vector2(5, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_2orjw"]
+script = ExtResource("2_4p4es")
+points = Vector2(6, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="Resource" id="Resource_r5c6h"]
+script = ExtResource("2_4p4es")
+points = Vector2(7, 7)
+occupied = false
+item_id = -1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mvn0j"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_npcku")
+stored_itens = ExtResource("2_gyfd7")
+slots = Array[ExtResource("2_4p4es")]([SubResource("Resource_yxlv1"), SubResource("Resource_162er"), SubResource("Resource_xidgv"), SubResource("Resource_iv5kw"), SubResource("Resource_fp7ah"), SubResource("Resource_xinxs"), SubResource("Resource_oxkel"), SubResource("Resource_0own3"), SubResource("Resource_apmcc"), SubResource("Resource_da6eh"), SubResource("Resource_iiabi"), SubResource("Resource_l0thf"), SubResource("Resource_omcw7"), SubResource("Resource_u5cme"), SubResource("Resource_8m5a7"), SubResource("Resource_78qr8"), SubResource("Resource_6fqvp"), SubResource("Resource_42wod"), SubResource("Resource_vw3px"), SubResource("Resource_hdaa3"), SubResource("Resource_68mtb"), SubResource("Resource_vfrd6"), SubResource("Resource_732br"), SubResource("Resource_bv83s"), SubResource("Resource_2b2on"), SubResource("Resource_ai3wk"), SubResource("Resource_l6pm0"), SubResource("Resource_mbo6j"), SubResource("Resource_wsura"), SubResource("Resource_6fo6g"), SubResource("Resource_34nfm"), SubResource("Resource_d7p68"), SubResource("Resource_bespv"), SubResource("Resource_7ge4h"), SubResource("Resource_7i8dr"), SubResource("Resource_tkusd"), SubResource("Resource_7gvlm"), SubResource("Resource_kpt1f"), SubResource("Resource_o5ui6"), SubResource("Resource_tol4j"), SubResource("Resource_es1jg"), SubResource("Resource_4ts58"), SubResource("Resource_ies6u"), SubResource("Resource_pqhkm"), SubResource("Resource_4qalb"), SubResource("Resource_a4dww"), SubResource("Resource_7p3oe"), SubResource("Resource_i4xpu"), SubResource("Resource_ui4hv"), SubResource("Resource_u6bkm"), SubResource("Resource_4voaw"), SubResource("Resource_c1js6"), SubResource("Resource_x8nik"), SubResource("Resource_lkapj"), SubResource("Resource_jaxtv"), SubResource("Resource_u1ot6"), SubResource("Resource_jh0ll"), SubResource("Resource_uaq5b"), SubResource("Resource_c5370"), SubResource("Resource_3pp58"), SubResource("Resource_x8s5h"), SubResource("Resource_cdnrh"), SubResource("Resource_2orjw"), SubResource("Resource_r5c6h")])
+items = Array[Resource("res://resources/Item.gd")]([ExtResource("2_r24ri")])
+
+[node name="Grid" type="TextureRect" parent="."]
+material = SubResource("CanvasItemMaterial_mvn0j")
+layout_mode = 0
+offset_right = 632.0
+offset_bottom = 632.0
+texture = ExtResource("1_ntjc1")
+stretch_mode = 1
+
+[node name="Item" parent="." instance=ExtResource("4_xcgwa")]
+layout_mode = 0
+
+[node name="Item2" parent="." instance=ExtResource("4_xcgwa")]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 79.0
+offset_right = 316.0
+offset_bottom = 316.0
+item_data = ExtResource("6_qg060")
+
+[node name="Item3" parent="." instance=ExtResource("4_xcgwa")]
+offset_left = 316.0
+offset_top = 158.0
+offset_right = 395.0
+offset_bottom = 395.0
+pivot_slot = Vector2i(4, 2)
+item_data = ExtResource("6_qg060")

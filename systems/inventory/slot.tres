@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Slot" load_steps=2 format=3 uid="uid://cglu8ic7ryehi"]
+
+[ext_resource type="Script" path="res://systems/inventory/Slot.gd" id="1_jhmlr"]
+
+[resource]
+script = ExtResource("1_jhmlr")
+points = Vector2(0, 0)
+occupied = false
+item_id = 0

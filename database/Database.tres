@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Database" load_steps=4 format=3 uid="uid://b5refee1cyx0k"]
+
+[ext_resource type="Script" path="res://database/Database.gd" id="1_d5mo8"]
+[ext_resource type="Resource" uid="uid://c6ej8v04bkjvt" path="res://database/itens/helmet.tres" id="1_le87r"]
+[ext_resource type="Resource" uid="uid://bqor0x1d6n8n" path="res://database/itens/sword.tres" id="2_1iih2"]
+
+[resource]
+script = ExtResource("1_d5mo8")
+items = Array[Resource("res://resources/item/Item.gd")]([ExtResource("1_le87r"), ExtResource("2_1iih2")])
+spells = Array[Resource("res://resources/spell/Spell.gd")]([])

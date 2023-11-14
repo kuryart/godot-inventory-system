@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://c6ej8v04bkjvt"]
+
+[ext_resource type="Script" path="res://resources/item/Item.gd" id="1_4rnjj"]
+[ext_resource type="Texture2D" uid="uid://cer18ieilxqw7" path="res://assets/sprites/items/hermes_helmet.png" id="1_dgp1t"]
+
+[resource]
+script = ExtResource("1_4rnjj")
+name = "Helmet"
+description = "A Helmet"
+size = Vector2i(3, 3)
+file = ExtResource("1_dgp1t")

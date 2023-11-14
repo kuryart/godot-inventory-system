@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bqor0x1d6n8n"]
+
+[ext_resource type="Texture2D" uid="uid://da2l71maoaga1" path="res://assets/sprites/items/sword.png" id="1_at8sa"]
+[ext_resource type="Script" path="res://resources/item/Item.gd" id="2_vs8d1"]
+
+[resource]
+script = ExtResource("2_vs8d1")
+name = "Sword"
+description = "A Sword"
+size = Vector2i(1, 3)
+file = ExtResource("1_at8sa")
